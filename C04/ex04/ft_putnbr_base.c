@@ -6,7 +6,7 @@
 /*   By: zirui <zirui@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 09:27:23 by zirui             #+#    #+#             */
-/*   Updated: 2025/10/07 16:05:36 by zirui            ###   ########.fr       */
+/*   Updated: 2025/10/07 16:06:27 by zirui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,33 +79,33 @@ void	ft_putnbr_base(int nbr, char *base)
 		ft_putchar(box[i]);
 }
 
-void ft_put_newline(void)
-{
-    write(1, "\n", 1);
-}
+// void ft_put_newline(void)
+// {
+//     write(1, "\n", 1);
+// }
 
-int main(void)
-{
-    // Test 1: Decimal (Base 10)
-    ft_putnbr_base(42, "0123456789"); // Should print 42
-    ft_put_newline();
+// int main(void)
+// {
+//     // Test 1: Decimal (Base 10)
+//     ft_putnbr_base(42, "0123456789"); // Should print 42
+//     ft_put_newline();
 
-    // Test 2: Binary (Base 2)
-    ft_putnbr_base(12, "01"); // Should print 1100
-    ft_put_newline();
+//     // Test 2: Binary (Base 2)
+//     ft_putnbr_base(12, "01"); // Should print 1100
+//     ft_put_newline();
 
-    // Test 3: Hexadecimal (Base 16)
-    ft_putnbr_base(255, "0123456789ABCDEF"); // Should print FF
-    ft_put_newline();
+//     // Test 3: Hexadecimal (Base 16)
+//     ft_putnbr_base(255, "0123456789ABCDEF"); // Should print FF
+//     ft_put_newline();
 
-    // Test 4: Negative number
-    ft_putnbr_base(-42, "0123456789"); // Should print -42
-    ft_put_newline();
+//     // Test 4: Negative number
+//     ft_putnbr_base(-42, "0123456789"); // Should print -42
+//     ft_put_newline();
 
-    // Test 5: Invalid base (should print nothing)
-    ft_putnbr_base(123, "0012");
-    ft_putnbr_base(123, "+012");
-    ft_put_newline();
+//     // Test 5: Invalid base (should print nothing)
+//     ft_putnbr_base(123, "0012");
+//     ft_putnbr_base(123, "+012");
+//     ft_put_newline();
 
-    return (0);
-}
+//     return (0);
+// }
